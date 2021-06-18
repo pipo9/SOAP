@@ -1,7 +1,7 @@
 package webservices;
 
 import java.util.ArrayList;
-
+import java.random;
 import javax.jws.WebService;
 
 import domain.Product;
@@ -30,7 +30,7 @@ public class ProductsManagerImpl implements ProductsManager {
 
 	public double getProductPrice(long id) throws NoSuchProductException {
 
-		return 0;
+		return new Random().nextDouble();
 	}
 
 	public Products getProducts() {
